@@ -1,0 +1,38 @@
+﻿<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">AuthoApp
+  </a>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['home']" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <!--<li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['precio']">Precios</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" >
+        <a class="nav-link" [routerLink]="['privado']">Protegida</a>
+      </li>
+        <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['template']">Template</a>
+      </li>
+       <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['data']">Data</a>
+      </li>-->
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['alumnos']">Alumnos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['equipos']">Equipos</a>
+        </li>
+    </ul>
+    <span class="navbar-text">
+      <button type="button" name="login" class="btn btn-outline-primary btn-sm" (click)="login()">login</button>
+      <button  type="button" name="logout" class="btn btn-outline-primary btn-sm" (click)="salir()">log out</button>
+      
+    </span>
+  </div>
+</nav>
