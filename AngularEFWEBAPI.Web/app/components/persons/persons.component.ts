@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Person } from '../../interfaces/person.interface';
 import { PersonService } from '../../services/person.service';  
 
 @Component({
@@ -9,22 +9,11 @@ import { PersonService } from '../../services/person.service';
 })
 export class PersonComponent implements OnInit {
 
-  persons: any[]= [];
+  persons: Person[];
   loading: boolean = true;
   constructor(private _personService: PersonService) {
       this._personService.getPersons()
-    .subscribe(data=> {
-      
-      // setTimeout(()=> {
-      //   this.loading = false;
-      //   this.alumnos = data;
-        // },3000);
-        this.persons = data;
-        this.loading = false;
-      //console.log(data);
-      
-      
-    });
+          .subscribe((data) => { this.persons = data, this.loading = false; });
   }
   deleteAlumno(a: string) {
 

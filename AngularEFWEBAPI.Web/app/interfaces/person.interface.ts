@@ -1,14 +1,14 @@
 
 
 export interface Person{
-    id: string;
-    name: string;
-    firsname:string;
-    phone: string;
-    cellphone: string;
-    document: string;
+    ID: string;
+    Name: string;
+    LastName:string;
+    Phone: string;
+    CellPhone: string;
+    Document: string;
     AddedDate: string;
     ModifiedDate: string;
     UserModifedId: string;
-    address: string;
+    Address: string;
 }

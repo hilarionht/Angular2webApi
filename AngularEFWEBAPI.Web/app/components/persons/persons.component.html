@@ -28,10 +28,10 @@
             <tbody>
               <tr *ngFor="let a of persons | keys ; let i = index" >
                 <td>{{i+1}}</td>
-                  <td>{{ persons[a].name }}</td>
-                  <td>{{ persons[a].firstname }}</td>
-                  <td>{{ persons[a].document }}</td>
-                  <td>{{ persons[a].email }}</td>
+                  <td>{{ persons[a].Name }}</td>
+                  <td>{{ persons[a].LastName }}</td>
+                  <td>{{ persons[a].Document }}</td>
+                  <td>{{ persons[a].Email }}</td>
                 <td class="text-right">
                   <button [routerLink]="['/alumno',a]" type="button" class="fa fa-pencil-square-o btn btn-outline-success btn-sm"> </button>
                   <button type="button" class="fa fa-trash-o btn btn-outline-danger btn-sm" (click)="deleteAlumno(a)"> </button>
@@ -47,6 +47,9 @@
               <strong>cargando...</strong>por favor espere
             </div>
       </table>
+        <p>
+            {{person | json}}
+        </p>
     </div>
   </div>
 
