@@ -18,21 +18,21 @@ namespace AngularEFWEBAPI.Api.Controllers
         {
 
         }
-        public IHttpActionResult Get()
+        public HttpResponseMessage Get()
         {
-            //try
-            //{
-            //    var result = new HttpResponseMessage(HttpStatusCode.OK);
-            //    result.Content = new StringContent(JsonConvert.SerializeObject(repository.GetAll()));
-            //    result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-            //    return result;
-            //}
-            //catch 
-            //{
+            try
+            {
+                var result = new HttpResponseMessage(HttpStatusCode.OK);
+                result.Content = new StringContent(JsonConvert.SerializeObject(repository.GetAll()));
+                result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                return result;
+            }
+            catch
+            {
 
-            //    return new HttpResponseMessage(HttpStatusCode.BadRequest);
-            //}
-            return Ok(repository.GetAll());
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
+            }
+            //return Ok(repository.GetAll());
         }
         //GET: api/Person/5
         public IHttpActionResult Get(int id)

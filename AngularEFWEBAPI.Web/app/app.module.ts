@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { APP_ROUTING } from './app.routes';
 import { AlumnosService } from './services/alumnos.service';
+import { PersonService } from './services/person.service';
 import { EquiposService } from './services/equipos.service';
 
 import { HelloWorldComponent } from './helloworld.component';
@@ -15,6 +16,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { AlumnoComponent } from './components/alumnos/alumno.component';
+import { PersonComponent } from './components/persons/persons.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
 import { KeysPipe } from './pipes/keys.pipe';
 
@@ -36,11 +38,14 @@ import { AppComponent } from './app.component';
         NavbarComponent,
         AlumnosComponent,
         AlumnoComponent,
+        PersonComponent,
         EquiposComponent,
+
         KeysPipe
     ],
     providers: [
         AlumnosService,
+        PersonService,
         EquiposService
     ],
     bootstrap: [AppComponent]

@@ -77,6 +77,7 @@
     <Content Include="app\components\equipos\equipos.component.js.map" />
     <Content Include="app\components\home\home.component.js.map" />
     <Content Include="app\components\navbar\navbar.component.js.map" />
+    <Content Include="app\components\persons\persons.component.html" />
     <Content Include="app\helloworld.component.js.map" />
     <Content Include="app\interfaces\alumno.interface.js.map" />
     <Content Include="app\interfaces\equipo.interface.js.map" />
@@ -181,13 +182,16 @@
     <TypeScriptCompile Include="app\components\equipos\equipos.component.ts" />
     <TypeScriptCompile Include="app\components\home\home.component.ts" />
     <TypeScriptCompile Include="app\components\navbar\navbar.component.ts" />
+    <TypeScriptCompile Include="app\components\persons\persons.component.ts" />
     <TypeScriptCompile Include="app\helloworld.component.ts" />
+    <TypeScriptCompile Include="app\interfaces\person.interface.ts" />
     <TypeScriptCompile Include="app\interfaces\alumno.interface.ts" />
     <TypeScriptCompile Include="app\interfaces\equipo.interface.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\pipes\keys.pipe.ts" />
     <TypeScriptCompile Include="app\services\alumnos.service.ts" />
     <TypeScriptCompile Include="app\services\equipos.service.ts" />
+    <TypeScriptCompile Include="app\services\person.service.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

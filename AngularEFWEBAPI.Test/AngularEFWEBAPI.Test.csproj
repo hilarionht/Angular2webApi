@@ -71,10 +71,6 @@
       <Project>{060e3fbc-1944-403f-9406-2197983280dc}</Project>
       <Name>AngularEFWEBAPI.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AngularEFWEBAPI.Mvc\AngularEFWEBAPI.Mvc.csproj">
-      <Project>{875a47ff-ae58-4acd-9db1-4879160383f1}</Project>
-      <Name>AngularEFWEBAPI.Mvc</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AngularEFWEBAPI.Repository\AngularEFWEBAPI.Repository.csproj">
       <Project>{7a6df13a-04bf-43d3-985a-14c84aaea887}</Project>
       <Name>AngularEFWEBAPI.Repository</Name>

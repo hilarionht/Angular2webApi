@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 //import { TemplateComponent } from './components/template/template.component';
 //import { DataComponent } from './components/data/data.component';
 import { AlumnoComponent } from './components/alumnos/alumno.component';
+import { PersonComponent } from './components/persons/persons.component';
 import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
 
@@ -19,6 +20,7 @@ const APP_ROUTES: Routes = [
     //{ path: 'data', component: DataComponent },
     { path: 'alumno/:id', component: AlumnoComponent },
     { path: 'alumnos', component: AlumnosComponent },
+    { path: 'persons', component: PersonComponent },
     { path: 'equipos', component: EquiposComponent },
     { path: '**', pathMatch:'full', redirectTo:'home' }
 ];
